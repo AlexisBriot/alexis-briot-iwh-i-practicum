@@ -1,0 +1,26 @@
+//- ** This is a sample of a pug template and how it uses the data passed to it from index.js.
+
+doctype html
+html 
+    head 
+        title= `${title}`
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+        link(rel="stylesheet", href="/css/style.css")
+    body    
+        h1 Companies
+        a(href='/update-cobj') Create a company
+
+        table 
+          tr 
+            th.titles Name 
+            th.titles Domain 
+            th.titles Custom property
+            th.titles action
+          each company in data
+            tr
+              th #{company.properties.name}
+              th #{company.properties.domain}
+              th #{company.properties.academyprop}
+              th
+                a(href='/update-cobj?companyId=' + company.id)
+                  div Update

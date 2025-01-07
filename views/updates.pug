@@ -1,0 +1,25 @@
+//- ** This is a sample of a pug template and how it uses the data passed to it from index.js.
+
+doctype html
+html 
+    head 
+        title= `${title}`
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+        link(rel="stylesheet", href="/css/style.css")
+    body    
+        h1 Update Custom Object Form | Integrating With HubSpot I Practicum
+        a(href='/') Return to the homepage
+        form(method="post" action="/update-cobj")
+          input(type="hidden", name="id", value=data ? data.id : '')
+          div
+            h3 Name
+              input(type="text", name="name", value=data && data.properties ? data.properties.name : '')
+          div
+            h3 Domain
+              input(type="text", name="domain", value=data && data.properties ? data.properties.domain : '')
+          div
+            h3 Custom property
+              input(type="text", name="academyprop", value=data && data.properties ? data.properties.academyprop : '')
+          div 
+            input(type="submit", value="Submit")
+            

@@ -1,0 +1,18 @@
+//- ** This is a sample of a pug template and how it uses the data passed to it from index.js.
+//- This is a card version 
+doctype html
+html 
+    head 
+        title= `${title}`
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+        link(rel="stylesheet", href="/css/style.css")
+    body    
+        h1 Companies
+        a(href='/update-cobj') Create a company
+        .cards 
+            each company in data
+                .card
+                    a(href='/update-cobj?companyId=' + company.id)
+                        h2.card__name #{company.properties.name}
+                        p.card__email #{company.properties.domain}
+                        p #{company.properties.academyprop}

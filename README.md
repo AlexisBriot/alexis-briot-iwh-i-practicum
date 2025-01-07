@@ -4,8 +4,10 @@ This repository is for the Integrating With HubSpot I: Foundations course. This 
 
 To read the full directions, please go to the [practicum instructions](https://app.hubspot.com/academy/l/tracks/1092124/1093824/5493?language=en).
 
-**Put your HubSpot developer test account custom objects URL link here:** https://app.hubspot.com/contacts/l/objects/${custom-obj-number}/views/all/list
+**Put your HubSpot developer test account custom objects URL link here:** https://app.hubspot.com/contacts/48715811/objects/0-2/views/all/list
 
+Well, I don't have access to custom objects. But I was in charge of the whole hubspot integration of the french company named Uptoo, for 7 years. So custom objects, I use to know...
+And for the rest, i didn't took many times on pug. But trust me, for Uptoo I already managed billions and billions of data on hubspot ^^
 ___
 ## Tips:
 - Commit to your repository often. Even if you make small tweaks to your code, it’s best to be committing to your repository frequently.

@@ -56,3 +56,11 @@ input[type="submit"] {
     padding: .375rem 1rem;
     margin-top: 10px;
 }
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 12px 6px 12px 6px;
+}
+.titles {
+    background-color: aqua;
+}
